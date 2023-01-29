@@ -1,0 +1,12 @@
+.editor-console {
+  margin: 0;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.console {
+  display: inline-block;
+  width: 100%;
+  height: calc(40% - 30px);
+  overflow: auto;
+}
