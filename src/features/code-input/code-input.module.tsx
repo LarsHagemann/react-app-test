@@ -5,7 +5,6 @@ import {
   useAppDispatch
 } from './../../../src/app/hooks';
 import { selectData, setContent, setEdited } from './../../../src/app/code-editor.slice';
-import { shallowEqual } from 'react-redux';
 
 interface CodeInputProperties {
   editor_id: number
