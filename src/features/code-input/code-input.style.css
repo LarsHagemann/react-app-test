@@ -1,0 +1,94 @@
+* {
+  --editor-font-size: 14pt;
+  --editor-font-family: monospace;
+  --editor-linenumbers-width: 60px;
+  --editor-padding-bottom: calc(100% - 10 * var(--editor-font-size));
+}
+
+.code-editor-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.code-editor-linenumbers {
+  width: var(--editor-linenumbers-width);
+  height: 100%;
+  display: inline-block;
+  text-align: right;
+  font-family: var(--editor-font-family);
+  font-size: var(--editor-font-size);
+  padding: 0 10px;
+  background-color: #CCC;
+  overflow: hidden;
+}
+
+.code-editor {
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+  width: calc(100% - var(--editor-linenumbers-width));
+  max-width: calc(100% - var(--editor-linenumbers-width));
+  font-family: var(--editor-font-family);
+  font-size: var(--editor-font-size);
+  padding: 0 5px;
+  overflow: auto;
+  line-height: var(--line-height);
+  outline: none;
+  resize: none;
+  border: none;
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+
+.code-editor:active, .code-editor:focus-visible {
+  border: none;
+  outline: none;
+}
+
+.code-editor::-webkit-scrollbar {
+  opacity: 0;
+  transition: .2s;
+}
+
+.code-editor::-webkit-scrollbar:hover {
+  opacity: 1;
+}
+
+.code-editor-linenumber {
+  display: block;
+}
+
+.code-editor-controls {
+  height: 75px;
+  padding-left: 10px;
+  box-shadow: 0px 5px 5px -5px black;
+  margin-bottom: 5px;
+}
+
+.code-editor-wrapper {
+  height: calc(100% - 75px);
+  width: 100%;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.code-editor-and-controls {
+  height: 100%;
+  width: 100%;
+}
+
+.first, .second, .third, .fourth {
+  box-sizing: border-box;
+  width: 50%;
+  height: 30%;
+  display: inline-block;
+}
+
+.code-editor-controls h3 {
+  display: inline-block;
+  margin-left: 15px;
+}
